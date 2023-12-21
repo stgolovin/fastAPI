@@ -1,0 +1,42 @@
+POST http://127.0.0.1:8000/api/items/
+Content-Type: application/json
+
+{
+  "name": "Samsung",
+  "description": "super phone",
+  "price": 450,
+  "tax": 2.7
+}
+
+###
+POST http://127.0.0.1:8000/api/items/
+Content-Type: application/json
+
+{
+  "name": "Redmi",
+  "price": 150
+}
+
+###
+GET http://127.0.0.1:8000/api/items/
+Content-Type: application/json
+
+###
+GET http://127.0.0.1:8000/api/items/2
+Content-Type: application/json
+
+
+###
+PUT http://127.0.0.1:8000/api/items/1
+Content-Type: application/json
+
+{
+  "name": "iPhone",
+  "description": "valid phone",
+  "price": 500,
+  "tax": 3.0
+}
+
+###
+DELETE http://127.0.0.1:8000/api/items/1
+Content-Type: application/json
